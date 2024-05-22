@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mo store</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="responsev.css">
+
+</head>
+
+<body>
+    <!-- alert  -->
+
+
+    <!-- navbar -->
+    <header class="header">
+
+    </header>
+    <!-- end  of Navbar -->
+
+    <!-- hero section  -->
+
+    <section class="hero-section " style="background-color:  #f3f1f2;">
+
+        <div class="main pl-48 pt-40 flex justify-between items-center h-screen ">
+            <div class="left-hero w-1/2 flex flex-col container justify-center items-start pr-28  ">
+                <h1 class="text-6xl  items-start font-sans font-bold ">
+                    Unlocking
+                    Affordability And Innovation
+                </h1>
+                <p class="font-sans text-xl font-light my-4 leading-6">
+                    Embark on a visionary computing journey with MS Store, fusing innovation and affordability, offering
+                    top-tier
+                    performance and customizable features, revolutionizing accessibility in high-performance computing.
+                </p>
+                <button class="btn text-xl rounded-full w-36 h-16 shadow-lg bg-black text-white ">Shop
+                    Now</button>
+
+            </div>
+            <div class="right-hero container flex w-1/2  items-center">
+                <img class="w-3/5" src="./assets/product.png" alt="">
+            </div>
+        </div>
+        <!-- end hero section -->
+    </section>
+
+    <!-- feature section  -->
+    <section class="features py-16">
+        <center>
+            <h1 class="section-title ">Feature</h1>
+
+        </center>
+        <div class="container flex flex-col h-screen justify-items-center items-center">
+            <div class="top-card relative flex justify-between items-center my-9">
+                <div class="cards shadow">
+
+                    <i class="fas fa-dollar-sign card-icon"></i>
+                    <h4 class="card-title">Affordable Solutions</h4>
+                    <p class="card-description description-text">Get high-quality technology without breaking the bank.
+                    </p>
+
+                </div>
+                <div class="cards shadow">
+
+                    <i class="fas fa-store card-icon"></i>
+                    <h4 class="card-title">Versatile Options</h4>
+                    <p class="card-description description-text">Explore a wide range of products to suit your needs.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="down-card flex justify-between">
+                <div class="cards shadow">
+
+
+                    <i class="fas fa-search card-icon"></i>
+                    <h4 class="card-title">Efficient Search</h4>
+                    <p class="card-description description-text">Find what you're looking for quickly and easily.</p>
+
+                </div>
+                <div class="cards shadow">
+
+
+                    <i class="fas fa-shopping-cart card-icon"></i>
+                    <h4 class="card-title">Convenient Shopping</h4>
+                    <p class="card-description description-text">Enjoy seamless shopping experiences right at your
+                        fingertips.</p>
+
+                </div>
+                <div class="cards shadow">
+
+                    <i class="fas fa-laptop card-icon"></i>
+                    <h4 class="card-title">Powerful Computing</h4>
+                    <p class="card-description description-text">Experience unparalleled performance and speed for your
+                        computing needs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Products -->
+    <section class="product container py-16">
+        <center>
+            <h1 class="section-title prodcut-show">Our Products</h1>
+        </center>
+        <div id="product-id" class="product-card container py-16  ">
+
+        </div>
+    </section>
+    <!-- Our Values -->
+    <section style="background-color: #f3f1f2;" class="  py-16 ">
+        <center>
+            <h1 class="section-title ">Our Values</h1>
+        </center>
+        <div class="values flex justify-between items-center container py-16 ">
+
+        </div>
+
+    </section>
+    <!-- last section  -->
+    <section class="flex items-center justify-center container px-32 mt-8">
+        <div style="background-color: #1d997a;"
+            class="contactus   flex justify-around items-center rounded-3xl container">
+
+
+            <div class="left-side">
+                <h1 class="text-5xl my-3 text-white">Trending offers</h1>
+                <p class="text-white text-2xl mb-4">offers up to 50%</p>
+                <button class="bg-white btn btn-light " style="color: #1d997a ;">discover now</button>
+            </div>
+            <img src="./assets/GalaxyS23Ultra.webp" width="250px" alt="" />
+        </div>
+    </section>
+
+    <!-- shop  -->
+    <section class="container py-16">
+
+
+        <center>
+            <h1 class="section-title mt-20">Our shop cart</h1>
+        </center>
+
+        <!-- main section -->
+        <section id="shop">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price($)</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id='productList'>
+                    <tr>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+    </section>
+    <!-- start menu  -->
+    <div class="menu">
+        <a href="#Home"><i class="fa-solid fa-house"></i></a>
+        <a href="#About"><i class="fa-solid fa-user"></i></a>
+        <a href="#Works"><i class="fa-brands fa-windows"></i></a>
+        <a href="#Contact"><i class="fa-solid fa-envelope"></i></a>
+
+        <label class="switch">
+            <input class="toggle" type="checkbox" />
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!--------------------- footer ---------- -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <h1 class="text-4xl"><span style="color: blueviolet">Mo</span>hamed Ali_Coder</h1>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- end Features  -->
+
+    <!-- scriptes  -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="./main.js">
+        
+    </script>
+
+</body>
+
+</html>
